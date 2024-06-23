@@ -4,9 +4,10 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+@import url('./1-gallery.css');
+@import url('./2-form.css');
+
 @import url('./vite-promo.css');
-@import url('./header.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +23,56 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.go-back,
+.item-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+  margin-bottom: 15px;
 }
